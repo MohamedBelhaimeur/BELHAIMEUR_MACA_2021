@@ -1,0 +1,6 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ĞøÀğ
+k
+java:S3008"URename this field "BASE_PRICE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÕ÷Ñ
+D
+java:S2786")Remove this redundant "static" qualifier.(ì“¸ûÿÿÿÿ
