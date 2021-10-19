@@ -4,13 +4,13 @@ public interface Composant
 {
     String getName();
     Owner getOwner();
-    void setOwner(Owner owner,bool recursive);
+    void setOwner(Owner owner,Boolean recursive);
 
     int getSize();
     String getContent();
     void appendContent(String name);
 
-    bool isComposite();
+    Boolean isComposite();
 
 
 }
