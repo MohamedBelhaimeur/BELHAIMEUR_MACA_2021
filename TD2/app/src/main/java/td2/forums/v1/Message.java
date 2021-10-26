@@ -10,7 +10,7 @@ public class Message {
     public Message(String topic,String contenu){
         this.topic=topic;
         this.contenu=contenu;
-      
+
     }
     public String sujet(){
         return this.topic;
