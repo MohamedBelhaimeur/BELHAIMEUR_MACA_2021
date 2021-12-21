@@ -4,20 +4,11 @@ public class Fichier extends ComposantImpl{
     private StringBuilder content;
     public Fichier(String name, Owner owner) {
         super(name, owner);
+        this.content=new StringBuilder();
     }
 
 
-    @Override
-    public Owner getOwner() {
-        return this.getOwner();
-    }
 
-    @Override
-    public void setOwner(Owner owner, Boolean recursive) {
-    if(recursive==false){
-        this.setOwner(owner,recursive);
-    }
-    }
 
     @Override
     public int getSize() {
@@ -38,7 +29,8 @@ public class Fichier extends ComposantImpl{
     public Boolean isComposite() {
         return false;
     }
-        public String toString(){
-        return this.content.toString();
+
+    public String toString(){
+        return "Fichier, name: "+super.getName()+", owner: "+super.getOwner().getName()+", content: "+this.content.toString();
     }
 }

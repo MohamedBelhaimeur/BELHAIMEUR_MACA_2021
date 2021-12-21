@@ -1,22 +1,15 @@
 package td2.filesystem;
 
+
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Repertoire extends ComposantImpl implements Composite{
-    List<Composant> liste_component=new ArrayList<>();
+public class Repertoire extends ComposantImpl implements Composite {
+    private List<Composant> liste_component=new ArrayList<>();
+
     public Repertoire(String name, Owner owner) {
         super(name, owner);
-    }
-
-    @Override
-    public Owner getOwner() {
-        return this.getOwner();
-    }
-
-    @Override
-    public void setOwner(Owner owner, Boolean recursive) {
-
     }
 
     @Override
@@ -27,11 +20,6 @@ public class Repertoire extends ComposantImpl implements Composite{
     @Override
     public String getContent() {
         return null;
-    }
-
-    @Override
-    public void appendContent(String name) {
-
     }
 
     @Override
@@ -59,6 +47,18 @@ public class Repertoire extends ComposantImpl implements Composite{
     public boolean removeChild(Composant o) {
         return this.liste_component.remove(o);
     }
+    @Override
+    public void appendContent(String name) {
 
+    }
+    public String toString(){
+            String result= "Repertoire, name: "+super.getName()+", owner: "+super.getOwner().getName();
+            result =result +"\n   fichiers: [ \n";
+            for (Composant index:liste_component){
+                result=result+"{ "+index.toString()+" } ";
+            }
+            result=result+" ] \n ";
+    return result;
+        }
 
 }

@@ -10,6 +10,18 @@ public  abstract class ComposantImpl implements Composant {
 
 
     @Override
+    public Owner getOwner() {
+        return this.owner;
+    }
+
+    @Override
+    public void setOwner(Owner owner, Boolean recursive) {
+        if(recursive==false){
+            this.setOwner(owner,recursive);
+        }
+    }
+
+    @Override
     public String getName() {
         return name;
     }

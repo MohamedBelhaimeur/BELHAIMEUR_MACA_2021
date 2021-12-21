@@ -1,28 +1,30 @@
 package td2.filesystem;
 
 public class FSFactory {
-    final FSFactory fsFactory = new FSFactory();
+    public static final FSFactory fsFactory = new FSFactory();
 
     private FSFactory() {
 
 
     }
 
-    public FSFactory getInstance() {
-        return this.fsFactory;
+    public static FSFactory getInstance() {
+        return fsFactory;
     }
 
     public Composant createComposant(ComposantType type, String name, Owner owner) {
     Composant composant=null;
-    if(type.equals("FICHIER")){
+    if(type==ComposantType.FICHIER){
         composant=new Fichier(name,owner);
+        return composant;
 
     }
-        if(type.equals("REPERTOIRE")){
+        if(type==ComposantType.REPERTOIRE){
             composant=new Repertoire(name,owner);
-
+            return composant;
         }
-        return composant;
+        System.out.println("test");
+        return null;
 
     }
 }
