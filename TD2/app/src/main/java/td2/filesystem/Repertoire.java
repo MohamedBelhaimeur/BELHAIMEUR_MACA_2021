@@ -19,7 +19,14 @@ public class Repertoire extends ComposantImpl implements Composite {
 
     @Override
     public String getContent() {
-        return null;
+
+            String result= "Repertoire, name: "+super.getName()+", owner: "+super.getOwner().getName();
+            result =result +"\n   fichiers: [ \n";
+            for (Composant index:liste_component){
+                result=result+"{ "+index.toString()+" } ";
+            }
+            result=result+" ] \n ";
+            return result;
     }
 
     @Override
