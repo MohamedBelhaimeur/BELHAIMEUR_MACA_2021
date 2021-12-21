@@ -20,7 +20,7 @@ public class Repertoire extends ComposantImpl implements Composite {
     @Override
     public String getContent() {
 
-            String result= "Repertoire, name: "+super.getName()+", owner: "+super.getOwner().getName();
+            String result= "";
             result =result +"\n   fichiers: [ \n";
             for (Composant index:liste_component){
                 result=result+"{ "+index.toString()+" } ";
@@ -60,12 +60,8 @@ public class Repertoire extends ComposantImpl implements Composite {
     }
     public String toString(){
             String result= "Repertoire, name: "+super.getName()+", owner: "+super.getOwner().getName();
-            result =result +"\n   fichiers: [ \n";
-            for (Composant index:liste_component){
-                result=result+"{ "+index.toString()+" } ";
-            }
-            result=result+" ] \n ";
-    return result;
+            result =result + this.getContent();
+            return result;
         }
 
 }
