@@ -1,16 +1,10 @@
-package TD3.Distributeur.client;
+package TD4.Distributeur.client;
 
-import TD3.Distributeur.state.IncorrectStateException;
-import TD3.Distributeur.state.SimpleVendingMachineContext;
+import TD4.Distributeur.state.IncorrectStateException;
+import TD4.Distributeur.state.SimpleVendingMachineContext;
 
 
-/**
- * Created with IntelliJ IDEA.
- * User: pascalpoizat
- * Date: 09/12/2013
- * Time: 11:51
- * To change this template use File | Settings | File Templates.
- */
+
 public class SimpleVendingMachineTest1 {
     public static void main(String[] args) {
         SimpleVendingMachineContext machine = new SimpleVendingMachineContext();

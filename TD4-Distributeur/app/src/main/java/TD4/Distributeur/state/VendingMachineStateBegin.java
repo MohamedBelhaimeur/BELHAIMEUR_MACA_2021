@@ -1,4 +1,4 @@
-package TD3.Distributeur.state;
+package TD4.Distributeur.state;
 
 public class VendingMachineStateBegin  extends VendingMachineState{
 
@@ -31,8 +31,7 @@ public class VendingMachineStateBegin  extends VendingMachineState{
         throw new IncorrectStateException("Pas possible");
     }
 
-    @Override
-    public int getRefund(VendingMachineContext c) throws IncorrectStateException {
-        return c.getRefund();
-    }
+    //get refund est deja implementé dans la classe abstraite
+
+
 }

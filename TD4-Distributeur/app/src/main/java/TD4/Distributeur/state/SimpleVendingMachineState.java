@@ -1,12 +1,6 @@
-package TD3.Distributeur.state;
+package TD4.Distributeur.state;
 
-/**
- * Created with IntelliJ IDEA.
- * User: pascalpoizat
- * Date: 09/12/2013
- * Time: 11:43
- * To change this template use File | Settings | File Templates.
- */
+
 public abstract class SimpleVendingMachineState {
     public abstract void give(SimpleVendingMachineContext c, int money) throws IncorrectStateException;
 

@@ -1,12 +1,6 @@
-package TD3.Distributeur.state;
+package TD4.Distributeur.state;
 
-/**
- * Created with IntelliJ IDEA.
- * User: pascalpoizat
- * Date: 09/12/2013
- * Time: 10:49
- * To change this template use File | Settings | File Templates.
- */
+
 public class VendingMachineContext {
     private VendingMachineState current;
     private int cash;
