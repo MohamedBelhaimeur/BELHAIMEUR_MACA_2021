@@ -19,16 +19,21 @@ public class Commande implements PrePostVisitable, Visitable {
     public void addLigne(Ligne ligne){
         this.liste_ligne.add(ligne);
     }
+
+    public List<Ligne> getListe_ligne() {
+        return liste_ligne;
+    }
+
     @Override
     public void accept(PrePostVisitor prePostVisitor) {
         prePostVisitor.preVisit(this);
-        prePostVisitor.postVisit(this);
+
         Iterator<Ligne> i=liste_ligne.iterator();
         while(i.hasNext()){
             i.next().accept(prePostVisitor);
 
         }
-
+        prePostVisitor.postVisit(this);
     }
 
     @Override
@@ -58,7 +63,5 @@ public class Commande implements PrePostVisitable, Visitable {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
 }

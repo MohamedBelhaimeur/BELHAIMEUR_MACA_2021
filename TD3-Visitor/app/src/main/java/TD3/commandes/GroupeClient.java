@@ -21,30 +21,47 @@ public class GroupeClient implements PrePostVisitable, Visitable {
     }
     public void addCommande(String client,Commande commande){
         Iterator <Client>i=liste_client.iterator();
+
         while(i.hasNext()){
-            if(i.next().getName().equals(client)){
-                i.next().addCommande(commande);
+          Client clienttemp=i.next();
+          if(clienttemp.getName().equals(client)){
+
+
+                    clienttemp.addCommande(commande);
+
+
             }
         }
     }
-    public void addLigne(String texte,String client,Ligne ligne){
+
+    public List<Client> getListe_client() {
+        return liste_client;
+    }
+
+    public void setListe_client(List<Client> liste_client) {
+        this.liste_client = liste_client;
+    }
+
+    public void addLigne(String client, String commande, Ligne ligne){
         Iterator <Client>i=liste_client.iterator();
         while(i.hasNext()){
-            if(i.next().getName().equals(client)){
-                i.next().addligne(texte,ligne);
+            Client clienttemp=i.next();
+            if(clienttemp.getName().equals(client)){
+                clienttemp.addligne(commande,ligne);
             }
         }
     }
     @Override
     public void accept(PrePostVisitor prePostVisitor) {
         prePostVisitor.preVisit(this);
-        prePostVisitor.postVisit(this);
+
 
         Iterator<Client> i=liste_client.iterator();
         while(i.hasNext()){
             i.next().accept(prePostVisitor);
 
         }
+        prePostVisitor.postVisit(this);
     }
 
     @Override
@@ -56,5 +73,9 @@ public class GroupeClient implements PrePostVisitable, Visitable {
 
         }
 
+    }
+
+    public String getName() {
+        return name;
     }
 }

@@ -39,10 +39,15 @@ public final class App {
 		Client c2 = new Client("joe");
 		m.groupeClient.addClient(c1);
 		m.groupeClient.addClient(c2);
+
 		//
 		Commande cde1 = new Commande("cde1");
 		Commande cde2 = new Commande("cde2");
 		Commande cde3 = new Commande("cde3");
+
+		/*for(Client index:m.groupeClient.getListe_client()){
+			System.out.println(index.getName());
+		}*/
 		m.groupeClient.addCommande("bob",cde1);
 		m.groupeClient.addCommande("bob", cde2);
 		m.groupeClient.addCommande("joe", cde3);

@@ -13,6 +13,10 @@ import java.util.Objects;
 public class Client  implements PrePostVisitable, Visitable {
     private List<Commande>liste_commande;
 
+    public List<Commande> getListe_commande() {
+        return liste_commande;
+    }
+
     private String name;
     public Client(String name){
         this.liste_commande=new ArrayList<>();
@@ -35,25 +39,27 @@ public class Client  implements PrePostVisitable, Visitable {
     public void addCommande(Commande commande){
         this.liste_commande.add(commande);
     }
-    public void addligne(String texte,Ligne ligne){
+    public void addligne(String commande,Ligne ligne){
 
         Iterator<Commande> i=liste_commande.iterator();
         while(i.hasNext()){
-            if(i.next().getName().equals(texte)){
-                i.next().addLigne(ligne);
+            Commande commandetemp=i.next();
+            if(commandetemp.getName().equals(commande)){
+
+                commandetemp.addLigne(ligne);
             }
         }
     }
     @Override
     public void accept(PrePostVisitor prePostVisitor) {
         prePostVisitor.preVisit(this);
-        prePostVisitor.postVisit(this);
+
         Iterator<Commande> i=liste_commande.iterator();
         while(i.hasNext()){
             i.next().accept(prePostVisitor);
 
         }
-
+        prePostVisitor.postVisit(this);
     }
 
     @Override
