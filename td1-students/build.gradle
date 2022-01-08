@@ -30,7 +30,8 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = 'td1.original.client.App'
+   // mainClassName = 'td1.original.client.App'
+    mainClassName = 'td1.refactor.client.App'
 }
 
 test {

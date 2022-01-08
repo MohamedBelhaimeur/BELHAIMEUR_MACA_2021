@@ -5,35 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c086ed59-a6d1-4a47-81e8-a94fe3f794cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.idea/TD3-Distributeur.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/client/SimpleVendingMachineTest1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/client/VendingMachineTest1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/state/IncorrectStateException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/state/SimpleVedingMachineStateEnd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/state/SimpleVendingMachineContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/state/SimpleVendingMachineState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/state/SimpleVendingMachineStateBegin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/state/VendingMachineContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/state/VendingMachineState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/state/VendingMachineStateBegin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/state/VendingMachineStateEnd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/app/src/main/java/TD3/Distributeur/state/VendingMachineStateIntermediaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TD3-Distributeur/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,13 +73,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TD3-Visitor" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Gradle.TD3-Distributeur [clean]">
+  <component name="RunManager" selected="Gradle.TD3-Distributeur [run] (1)">
     <configuration name="TD3-Distributeur [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -190,8 +164,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TD3-Distributeur [clean]" />
         <item itemvalue="Gradle.TD3-Distributeur [run] (1)" />
+        <item itemvalue="Gradle.TD3-Distributeur [clean]" />
         <item itemvalue="Gradle.TD3-Distributeur [build]" />
         <item itemvalue="Gradle.TD3-Distributeur [run]" />
       </list>

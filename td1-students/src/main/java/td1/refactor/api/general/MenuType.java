@@ -5,6 +5,6 @@ public enum MenuType implements  FoodConstituent{
 
     @Override
     public double calories_per_100g() {
-        return 0;
+        return 30;
     }
 }

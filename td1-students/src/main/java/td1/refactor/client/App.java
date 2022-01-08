@@ -12,7 +12,7 @@ import static td1.refactor.api.general.SauceType.*;
 
 import java.util.Arrays;
 import java.util.List;
-/*
+
 public class App {
     public static void main(String args[]) {
         BurgerAdvisor.register(CHEAP, MacDeauRestaurant.queue());
@@ -50,4 +50,4 @@ public class App {
             System.out.println(dinner);
         }
     }
-}*/
+}
